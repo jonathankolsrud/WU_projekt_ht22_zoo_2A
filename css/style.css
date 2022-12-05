@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 header {
     width: 100%;
     height: 100px;
@@ -10,7 +11,13 @@ header {
     display: flex;
     flex-direction: row;
     background-color: red;
+    opacity: 0.70;
     }
+
+h1{ 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
 
 .menu {
     width: 100%;
@@ -46,7 +53,7 @@ opacity: .;
 #gridwrapper {
     display: grid;
     grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: minmax(100px, 500px);
+    grid-template-rows: minmax(100px, 800px);
     grid-template-areas: 
     "ma";
 
@@ -58,5 +65,20 @@ main {
     background-color: blue;
     color: red;
 grid-area: ma;
+display: flex;
+justify-content: center;
+height: 100vh;
+}
 
+.slideshow-container {
+    margin: 0px;
+    
+  }
+
+.slideshow_images {
+height: 100vh;
+}
+
+.mySlides {
+  display: none;
 }
