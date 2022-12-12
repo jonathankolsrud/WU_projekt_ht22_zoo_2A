@@ -52,11 +52,11 @@ opacity: .;
 
 #gridwrapper {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: minmax(100px, 800px);
+    grid-template-columns: minmax() minmax(100px, 1fr);
+    grid-template-rows: minmax(100px, 100px) minmax(100px, 800px);
     grid-template-areas: 
+    "he"
     "ma";
-
 }
 
 
@@ -81,4 +81,51 @@ height: 100vh;
 
 .mySlides {
   display: none;
+}
+
+/* Restaurant */
+#section_food{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article_food {
+    width: 180px;
+    height: 210px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#article_beef {
+    background: url(../img/Cards_food/beef.jpg);
+    background-size: contain;
+}
+#article_pork {
+    background: url(../img/Cards_food/pork.jpg);
+    background-size: contain;
+}
+#article_pasta {
+    background: url(../img/Cards_food/pasta.jpg);
+    background-size: contain;
+}
+#article_fish {
+    background: url(../img/Cards_food/fish.jpg);
+    background-size: contain;
+}
+#article_burger {
+    background: url(../img/Cards_food/burger.jpg);
+    background-size: contain;
+}
+#article_salad {
+    background: url(../img/Cards_food/salad.jpg);
+    background-size: contain;
+}
+#article_avocado_toast {
+    background: url(../img/Cards_food/Avocado_toast.jpg);
+    background-size: contain;
 }
