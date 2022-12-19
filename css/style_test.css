@@ -1,0 +1,21 @@
+#slideshow
+
+.slideshow-container {
+    margin: 0px;
+    
+  }
+
+.slideshow_images {
+height: 115vh;
+width:1fr;
+}
+
+.mySlides {
+  display: none;
+}
+
+.menu {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
