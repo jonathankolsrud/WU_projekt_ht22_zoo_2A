@@ -18,10 +18,11 @@ footer{
 #gridwrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8vh 105vh 105vh 105vh 18vh;
+    grid-template-rows: 8vh 100vh 18vh 105vh 105vh 18vh;
     grid-template-areas: 
     "he he"
     "div1 div1"
+    "in in"
     "div2 div3"
     "div4 div4"
     "fo fo"
@@ -48,6 +49,7 @@ header {
 
 /* menyn */
 .menu {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,7 +89,12 @@ header {
 .menu_link_tickets { text-decoration: none; }
 #menu_tickets {
 background-color: white;
-border: 0.7vh solid white
+border: 0.9vh solid white;
+border-radius: 1vh;
+height: 4vh;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .menu_link_tickets{
@@ -105,30 +112,145 @@ font-size: 4vh;
 font-family: 'animal kingdom';
 }
 
+/* index */
+
+/*info*/
+#info{
+    background-color: rgb(0,150,69);
+    grid-area: in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info_container{
+    width: 190vh;
+    height: 20vh;
+    background-color: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.info_icon{
+
+}
+
+.info_box{
+display: flex;
+margin: 7vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.info_text{
+display: flex;
+flex-direction: column;
+color: rgb(0, 50, 25);
+margin: 1vh;
+}
+
+.info_title{
+font-family: cursive;
+font-size: 4vh;
+}
+
+.info_subtitle{
+font-family: cursive;
+font-size: 2.4vh;
+}
+
+.image_info_box{
+    width: 7.6vh;
+    height: 7.6vh;
+    
+}
 
 
 /* images index */
+.image_text_container{
+    position: relative;
+    top: 90vh;
+    width: 60vh;
+    height: 10vh;
+    background-color: rgb(0,150,69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1vh;
+    color: white;
+}
+/*image 1*/
 #image1{
 background-image: url(../img/Slideshow_animals/Elephants2.jpg);
 background-color: blue;
 grid-area: div1;
 background-size: cover;
 background-position: center;
+display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#image1_text{
+    height: 20vh;
+    background-color: ;
+    display: flex;
+}
+
+#image1_buy_tickets{
+    background-color: white;
+    border: 1.2vh solid white;
+    height: ;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    height: 5vh;
+}
+
+
+/*image 2*/
 #image2{
 background-image: url(../img/index_images/Deers.jpg);
 background-color: red;
 grid-area: div2;
 background-size: cover;
 background-position: center;
+display: flex;
+justify-content: center;
 }
+
+#image2_text_container{
+    background-color: rgb(0,150,69);
+}
+
+/*image 3*/
 #image3{
-    background-image: url(../img/index_images/map.jpg);
+background-image: url(../img/index_images/map.jpg);
 background-color: black;
 grid-area: div3;
 background-size: cover;
 background-position: center;
+display: flex;
+justify-content: center;
 }
+
+#image3_text_container{
+    background-color: orange;
+}
+
+/*image 4*/
 #image4{
     background-image: url(../img/index_images/signs.jpg);
 background-color: blueviolet;
@@ -140,14 +262,28 @@ background-position: center;
 
 
 /* Restaurant */
+
+
+#gridwrapper2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8vh 100vh 18vh;
+    grid-template-areas: 
+    "he he"
+    "div1 div1"
+    "fo fo"
+    ;
+
+}
 #section_food{
     display: flex;
     flex-wrap: wrap;
+    grid-area: div1;
 }
 
 .article_food {
-    width: 180px;
-    height: 210px;
+    width: 25vh;
+    height: 30vh;
     border: 2px solid black;
     border-radius: 30px;
     margin: 10px;
@@ -155,36 +291,49 @@ background-position: center;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 #article_beef {
     background: url(../img/Cards_food/beef.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_pork {
     background: url(../img/Cards_food/pork.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_pasta {
     background: url(../img/Cards_food/pasta.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_fish {
     background: url(../img/Cards_food/fish.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_burger {
     background: url(../img/Cards_food/burger.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_salad {
     background: url(../img/Cards_food/salad.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 #article_avocado_toast {
     background: url(../img/Cards_food/Avocado_toast.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
+
+
+
+
+
 
 /* about us */
 #gridwrapper3 {
