@@ -267,23 +267,43 @@ background-position: center;
 #gridwrapper2 {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8vh 100vh 18vh;
+    grid-template-rows: 8vh  100vh 18vh;
     grid-template-areas: 
     "he he"
-    "div1 div1"
+    "fd fd"
     "fo fo"
     ;
 
 }
-#section_food{
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: div1;
+
+
+
+main{
+grid-area: fd;
+display: flex;
+justify-content:center ;
+align-items: center;
+flex-direction: column;
 }
 
-.article_food {
+#menu{
+    font-family: cursive;
+    font-size: 6vh;
+}
+
+
+#section_food{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+   
+
+   justify-content: center;
+}
+.cards{
     width: 25vh;
-    height: 30vh;
+    height: 32vh;
     border: 2px solid black;
     border-radius: 30px;
     margin: 10px;
@@ -291,7 +311,21 @@ background-position: center;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
+    background-color: white;
+}
+
+.article_food {
+   height: 25vh;
+   width: 100%;
+   border-radius: 30px 30px 0px 0px;
+}
+
+.food_text{
+    height: 7vh;
+    font-family: cursive;
+    font-size: 1.4vh;
+    width: 96%;
+    border-radius: 0px 0px 30px 30px ;
 }
 
 #article_beef {
