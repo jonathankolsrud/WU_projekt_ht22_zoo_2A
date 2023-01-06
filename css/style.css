@@ -8,17 +8,68 @@
     src: url(fonts/Animal\ Kingdom.ttf) format("truetype");
   }
 
+/*footer*/
 footer{ 
     grid-area: fo;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(38, 38, 38);
     height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#footer_container{
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_section{
+   
+    width: 23%;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.footer_text{
+font-family: arial;
+font-size: 3.3vh;
+margin-top: 3vh;
+color: white;
+}
+
+#footer_title{
+color: white;
+font-size: 4vh;
+font-family: 'animal kingdom';
+margin-top: 3vh;
+}
+
+#footer_bottom_text{
+    color:grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vh;
+}
+
+#footer_socialmedia{
+    display: flex;
+}
+
+.footer_socialmedia_logo{
+    width: 5vh;
+    margin-top: 2vh;
+    margin-right: 3vh;
 }
 
 
 #gridwrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8vh 100vh 18vh 105vh 105vh 18vh;
+    grid-template-rows: 8vh 100vh 18vh 105vh 105vh 50vh;
     grid-template-areas: 
     "he he"
     "div1 div1"
@@ -57,7 +108,10 @@ header {
     
 }
 #title{
-    background-color: ;
+    color: white;
+font-size: 4vh;
+font-family: 'animal kingdom';
+    
     display: flex;
     align-items: center;
     
@@ -105,13 +159,6 @@ justify-content: center;
     font-size: 3vh;
 }
 
-
-h1 {
-color: white;
-font-size: 4vh;
-font-family: 'animal kingdom';
-}
-
 /* index */
 
 /*info*/
@@ -121,6 +168,7 @@ font-family: 'animal kingdom';
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0.4vh solid black;
 }
 #info_container{
     width: 190vh;
@@ -187,7 +235,7 @@ font-size: 2.4vh;
 }
 /*image 1*/
 #image1{
-background-image: url(../img/Slideshow_animals/Elephants2.jpg);
+background-image: url(../img/index/Slideshow_animals/Elephants2.jpg);
 background-color: blue;
 grid-area: div1;
 background-size: cover;
@@ -222,7 +270,7 @@ display: flex;
 
 /*image 2*/
 #image2{
-background-image: url(../img/index_images/Deers.jpg);
+background-image: url(../img/index/index_images/Deers.jpg);
 background-color: red;
 grid-area: div2;
 background-size: cover;
@@ -237,7 +285,7 @@ justify-content: center;
 
 /*image 3*/
 #image3{
-background-image: url(../img/index_images/map.jpg);
+background-image: url(../img/index/index_images/map.jpg);
 background-color: black;
 grid-area: div3;
 background-size: cover;
@@ -252,7 +300,7 @@ justify-content: center;
 
 /*image 4*/
 #image4{
-    background-image: url(../img/index_images/signs.jpg);
+background-image: url(../img/index/index_images/signs.jpg);
 background-color: blueviolet;
 grid-area: div4;
 background-size: cover;
@@ -263,30 +311,38 @@ background-position: center;
 
 /* Restaurant */
 
-
 #gridwrapper2 {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8vh  100vh 18vh;
+    grid-template-rows: 8vh  100vh 100vh 50vh;
     grid-template-areas: 
     "he he"
-    "fd fd"
+    "div1 div1"
+    "div2 div2"
     "fo fo"
     ;
 
 }
 
+#restaurant_image1{
+    grid-area: div1;
+    background-color: red;
+    background-image: url(../img/Restaurant/Restaurant_images/Restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 
-main{
-grid-area: fd;
+
+#menu{
+grid-area: div2;
 display: flex;
 justify-content:center ;
 align-items: center;
 flex-direction: column;
 }
 
-#menu{
+#menu_text{
     font-family: cursive;
     font-size: 6vh;
 }
@@ -297,8 +353,6 @@ flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-   
-
    justify-content: center;
 }
 .cards{
@@ -329,40 +383,66 @@ flex-direction: column;
 }
 
 #article_beef {
-    background: url(../img/Cards_food/beef.jpg);
+    background: url(../img/restaurant/Cards_food/beef.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_pork {
-    background: url(../img/Cards_food/pork.jpg);
+    background: url(../img/restaurant/Cards_food/pork.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_pasta {
-    background: url(../img/Cards_food/pasta.jpg);
+    background: url(../img/restaurant/Cards_food/pasta.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_fish {
-    background: url(../img/Cards_food/fish.jpg);
+    background: url(../img/restaurant/Cards_food/fish.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_burger {
-    background: url(../img/Cards_food/burger.jpg);
+    background: url(../img/restaurant/Cards_food/burger.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_salad {
-    background: url(../img/Cards_food/salad.jpg);
+    background: url(../img/restaurant/Cards_food/salad.jpg);
     background-size:cover;
     background-position: center;
 }
 #article_avocado_toast {
-    background: url(../img/Cards_food/Avocado_toast.jpg);
+    background: url(../img/restaurant/Cards_food/Avocado_toast.jpg);
     background-size:cover;
     background-position: center;
 }
+#article_toast {
+    background: url(../img/restaurant/Cards_food/Toast.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#article_tacos {
+    background: url(../img/restaurant/Cards_food/tacos.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#article_dumplings {
+    background: url(../img/restaurant/Cards_food/dumplings.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#article_grill {
+    background: url(../img/restaurant/Cards_food/grill.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#article_pizza {
+    background: url(../img/restaurant/Cards_food/pizza.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
 
 
 
@@ -373,7 +453,7 @@ flex-direction: column;
 #gridwrapper3 {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8vh 47vh 70vh 70vh 70vh 30vh;
+    grid-template-rows: 8vh 47vh 70vh 70vh 70vh 50vh;
     grid-template-areas: 
     "he he"
     "div1 div1"
@@ -386,7 +466,7 @@ flex-direction: column;
 
 #top_image {
     grid-area: div1;
-    background-image: url(../img/About_us_images/meerkat.png);
+    background-image: url(../img/about_us/About_us_images/meerkat.png);
     background-size:cover;
     background-position: center;
 }
@@ -442,7 +522,7 @@ font-size: 3vh;
 }
 
 #image_our_mission{
-    background-image: url(../img/About_us_images/turtle.jpg);
+    background-image: url(../img/about_us/About_us_images/turtle.jpg);
     background-size:cover;
     background-position: center;
     height: 100%;
@@ -458,7 +538,7 @@ font-size: 3vh;
 }
 
 #image_our_story{
-    background-image: url(../img/About_us_images/our_story.jpg);
+    background-image: url(../img/about_us/About_us_images/our_story.jpg);
     background-size:cover;
     background-position: center;
     height: 100%;
@@ -474,7 +554,7 @@ font-size: 3vh;
 }
 
 #image_partners{
-    background-image: url(../img/About_us_images/camel.jpg);
+    background-image: url(../img/about_us/About_us_images/camel.jpg);
     background-size:cover;
     background-position: center;
     height: 100%;
